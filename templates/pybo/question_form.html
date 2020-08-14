@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+	<h5 class="my-3 border-bottom pb-2">질문등록</h5>
+	<form method="post" class="post-form my-3">
+		{% csrf_token %}
+
+		
+		
+		{% if form.errors %}
+			{% for field in form %}
+				{% if field.errors %}
+					<strong>field.label</strong>
+					{{field.errors}}
+				{% endif %}
+			{% endfor %}
+		{% endif %}
+
+
+
+ghood:
+{{ messages }}
+
+{% if messages %}
+<ul class="messages">
+	{% for message in messages %}
+	<li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+		{% endfor %}
+</ul>
+{% endif %}
+
+
+
+
+<!-- message -->
+
+{% for error in form.non_field_errors %}
+<!-- 넌필드 오류를 출력한다. -->
+<div class="alert alert-danger">
+	<strong>{{ error }}</strong>
+</div>
+{% endfor %}
+
+
+
+	{{ form.as_p }}
+
+		<button type="submit" class="btn btn-primary">저장하기</button>
+	</form>
+</div>
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,49 @@
+{% load static %}
+
+<html lang="ko">
+	<head>
+		 <meta charset="utf-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		 <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+		 <link rel="stylesheet" href="{% static 'style.css' %}">
+
+
+
+		 <title>localhost PYBO</title>
+	</head>
+	<style>
+		.num{
+			color:blue;
+		}
+		.current_num{
+			color:red;
+		}
+		
+		</style>
+	<body>
+
+		{% include 'navbar.html' %}
+
+
+
+		{% block content %}
+		{% endblock %}
+
+
+<script src="{% static 'jquery.min.js' %}"></script>
+<script src="{% static 'bootstrap.min.js' %}"></script>
+			
+		{% block script %}
+		{% endblock %}
+
+		
+	</body>
+</html>
+
+<script>
+	if ( window.history.replaceState ) {
+	  window.history.replaceState( null, null, window.location.href );
+	}
+	</script>
+
+	

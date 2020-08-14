@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% block content %}
+
+로그인창입니다. 웰컴!
+
+<!-- form. 은 이것의 벨류를 뜻한다 -->
+<form action=" {% url 'common:login' %} " method="post">
+	{% csrf_token %}
+
+
+	
+	{% if form.errors %}
+		{% for field in form %}
+			{% for error in field.errors %}
+				{{ error }}
+				에러발생..1
+			{% endfor %}
+		{% endfor %}
+		{% for error in form.non_field_errors %}
+			NONFIELD:
+			{{ error }}
+		{% endfor %}
+	{% endif %}
+
+
+	ID: 
+	<input type="text" name="username" value="{{ form.username.value|default_if_none:'' }}">
+	<br>
+	<br>
+	pw:
+	<input type="password" name="password"  value="{{ form.password.value|default_if_none:'' }}">
+	<input type="hidden" name="next" value="{{ next }}">
+	<input type="submit" value="전송">
+
+	<br>
+	<br>
+	
+
+
+	<a href=" {% url 'common:signup' %}">회원가입하기</a>
+
+	<br>
+	YOUR TARGET :
+	<br>
+	{{ next }}
+
+
+	
+
+	
+</form>
+
+{% endblock %}

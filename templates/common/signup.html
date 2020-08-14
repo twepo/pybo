@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+
+        HELLOFORM!
+        
+        <form method="POST">
+            {% csrf_token %}
+            
+            ID:
+            <input type="text" name="username">
+            PW:
+            <input type="password" name="password1">
+            PW CHECK:
+            <input type="password" name="password2">
+            EMAIL:
+            <input type="text" name="email">
+
+            
+            <input type="submit" value="전송">
+        </form>
+
+
+    
+
+
+{% endblock %}
