@@ -125,10 +125,13 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
-import time
-f = open("c:/pychecker.txt", "w")
-f.write(str(time.time()))
-f.close()
+
+# import time
+# f = open("c:/pychecker.txt", "w")
+# f.write(str(time.time()))
+# f.close()
+
+
 
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
