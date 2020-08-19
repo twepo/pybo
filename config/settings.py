@@ -126,10 +126,10 @@ STATICFILES_DIRS = [
 ]
 
 
-# import time
-# f = open("c:/pychecker.txt", "w")
-# f.write(str(time.time()))
-# f.close()
+import time
+f = open("C:/projects/mysite/pychecker.txt", "w")
+f.write(str(time.time()))
+f.close()
 
 
 

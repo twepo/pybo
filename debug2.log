@@ -19090,3 +19090,30 @@ django.core.exceptions.FieldError: Cannot resolve keyword '' into field. Choices
 2020-08-14 12:11:54,746 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
 2020-08-14 12:13:22,136 DEBUG    [asyncio:623] Using proactor: IocpProactor
 2020-08-14 12:13:22,186 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-19 22:27:18,971 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-19 22:27:29,941 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-19 22:27:29,942 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-19 22:27:31,312 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-19 22:27:33,837 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-19 22:27:33,838 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-19 22:27:35,357 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-19 22:27:36,839 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-19 22:27:36,839 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-19 22:27:38,260 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-19 22:29:18,899 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-19 22:29:18,900 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-19 22:29:20,340 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-19 22:29:21,891 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-19 22:29:21,892 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-19 22:29:23,375 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-19 22:29:37,344 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-19 22:29:37,345 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-19 22:29:38,728 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-19 22:29:40,286 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-19 22:29:40,287 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-19 22:29:41,795 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-19 22:29:49,591 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-19 22:29:49,592 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-19 22:29:51,060 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-19 22:30:12,269 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-19 22:30:12,318 DEBUG    [asyncio:623] Using proactor: IocpProactor
