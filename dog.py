@@ -1,2 +1,0 @@
-dog!.. putin 
-bark : walwal
