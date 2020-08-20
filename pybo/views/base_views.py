@@ -26,9 +26,6 @@ from util import *
 
 
 
-
-
-
 from django.db.models import Q, Count
 
 
