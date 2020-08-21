@@ -50,7 +50,6 @@ def index(request):
 	else:
 		question_list = Question.objects.order_by('-create_date')
 
-	print( Question.objects.values() )	
 
 	if kw:
 		question_list = question_list.filter(

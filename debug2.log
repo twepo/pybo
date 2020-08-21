@@ -386,3 +386,95 @@ NameError: name 'contessxt' is not defined
 2020-08-21 14:50:00,568 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
 2020-08-21 14:51:34,169 DEBUG    [asyncio:623] Using proactor: IocpProactor
 2020-08-21 14:51:34,215 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 15:30:16,308 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 15:30:22,312 ERROR    [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2020-08-21 15:30:22,959 ERROR    [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2020-08-21 15:37:40,815 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 15:37:40,879 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 15:42:31,254 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 15:42:44,941 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-21 15:42:44,941 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 15:42:46,335 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 15:43:00,054 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-21 15:43:00,055 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 15:43:01,494 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 15:45:14,478 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-21 15:45:14,478 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 15:45:15,899 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 15:45:24,446 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-21 15:45:24,447 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 15:45:25,842 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 15:45:31,307 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-21 15:45:31,310 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 15:45:32,734 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 15:45:58,769 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-21 15:45:58,769 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 15:46:00,187 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 15:46:04,591 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-21 15:46:04,592 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 15:46:05,960 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 15:46:08,273 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-21 15:46:08,273 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 15:46:09,642 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 16:04:46,434 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-21 16:04:46,436 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 16:04:47,927 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 16:06:41,425 INFO     [django.utils.autoreload:236] C:\projects\mysite\pybo\views\base_views.py changed, reloading.
+2020-08-21 16:06:41,429 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 16:06:42,815 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 16:07:00,754 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-21 16:07:00,755 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 16:07:02,249 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 16:07:08,788 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-21 16:07:08,789 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 16:07:10,246 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 16:07:34,280 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-21 16:07:34,280 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 16:07:35,720 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 16:07:40,086 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-21 16:07:40,087 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 16:07:41,518 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 16:08:09,701 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-21 16:08:09,711 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 16:08:11,258 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 16:08:18,827 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-21 16:08:18,828 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 16:08:20,257 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 16:08:33,962 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-21 16:08:33,963 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 16:08:35,370 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 16:08:37,787 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-21 16:08:37,788 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 16:08:39,149 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 16:08:58,161 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings.py changed, reloading.
+2020-08-21 16:08:58,161 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 16:08:58,476 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 16:12:18,130 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 16:12:52,704 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 16:12:52,742 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 16:13:20,162 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 16:13:27,714 ERROR    [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2020-08-21 16:13:28,354 ERROR    [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2020-08-21 16:13:33,192 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 16:13:33,229 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 16:13:51,385 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 16:13:59,356 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-21 16:13:59,358 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-21 16:13:59,361 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-21 16:13:59,362 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-21 17:18:09,996 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 17:18:10,036 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 17:18:42,203 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 17:18:50,683 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 17:18:50,723 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 17:19:11,410 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 17:19:13,017 ERROR    [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2020-08-21 17:19:16,362 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 17:19:16,400 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 17:19:34,355 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 17:19:36,874 ERROR    [django.security.DisallowedHost:88] Invalid HTTP_HOST header: '127.0.0.1:8000'. You may need to add '127.0.0.1' to ALLOWED_HOSTS.
+2020-08-21 17:19:46,851 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 17:19:46,890 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 17:33:29,999 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-21 17:33:46,738 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 17:33:46,775 DEBUG    [asyncio:623] Using proactor: IocpProactor
