@@ -37,9 +37,3 @@ urlpatterns = [
 # pybo 매핑은 위에서 되어있기 때문에,
 # pybo 에서는 따로 매핑하지 않아도 된다.
 
-
-if settings.DEBUG:
-    import debug_toolbar
-    urlpatterns += [
-        url(r'^__debug__/', include(debug_toolbar.urls)),
-    ]
