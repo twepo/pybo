@@ -125,9 +125,8 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
-
 import time
-f = open("C:/projects/mysite/pychecker.txt", "w")
+f = open("config/pychecker.txt", "w")
 f.write(str(time.time()))
 f.close()
 
