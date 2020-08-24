@@ -5,4 +5,4 @@ __pycache__
 .vscode
 .log
 pychecker.txt
-.debug2.log
+debug2.log
