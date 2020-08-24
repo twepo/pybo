@@ -481,3 +481,128 @@ NameError: name 'contessxt' is not defined
 2020-08-21 19:07:20,858 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
 2020-08-21 19:07:56,460 DEBUG    [asyncio:623] Using proactor: IocpProactor
 2020-08-21 19:07:56,496 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-21 19:18:02,492 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 15:23:53,388 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 15:25:04,040 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-24 15:25:04,042 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-24 15:25:04,050 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-24 15:25:04,050 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-24 15:25:04,053 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-24 15:25:04,054 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-24 15:25:04,056 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-24 15:25:04,056 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-24 15:25:04,059 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-24 15:25:04,059 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-24 15:25:04,062 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-24 15:25:04,062 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-24 15:25:04,065 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-24 15:25:04,065 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-24 15:25:04,068 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-24 15:25:04,068 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-24 15:25:04,071 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-24 15:25:04,071 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-24 15:25:04,073 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-24 15:25:04,073 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-24 15:25:04,077 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-24 15:25:04,077 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-24 15:25:04,079 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-24 15:25:04,079 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-24 15:25:04,082 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-24 15:25:04,082 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-24 15:25:04,085 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-24 15:25:04,085 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-24 15:25:04,088 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-24 15:25:04,088 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-24 15:25:04,090 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-24 15:25:04,091 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-24 15:25:04,093 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-24 15:25:04,093 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-24 15:25:04,096 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-24 15:25:04,096 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-24 15:25:04,099 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-24 15:25:04,099 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-24 15:25:04,102 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-24 15:25:04,102 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-24 15:25:04,105 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-24 15:25:04,105 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-24 15:25:04,107 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.nl2br.Nl2BrExtension".
+2020-08-24 15:25:04,107 DEBUG    [MARKDOWN:125] Successfully loaded extension "markdown.extensions.fenced_code.FencedCodeExtension".
+2020-08-24 15:26:01,408 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\local.py changed, reloading.
+2020-08-24 15:26:01,409 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 15:26:02,900 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 15:59:48,167 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 15:59:54,484 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 15:59:54,521 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:00:09,748 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:00:18,244 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\local.py changed, reloading.
+2020-08-24 16:00:18,244 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:00:19,564 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:08:18,095 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:09:37,659 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\base.py changed, reloading.
+2020-08-24 16:09:37,659 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:09:39,134 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:09:44,539 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\base.py changed, reloading.
+2020-08-24 16:09:44,540 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:09:45,916 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:09:47,225 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\base.py changed, reloading.
+2020-08-24 16:09:47,226 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:09:48,612 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:09:49,919 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\base.py changed, reloading.
+2020-08-24 16:09:49,919 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:09:51,405 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:10:33,919 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\base.py changed, reloading.
+2020-08-24 16:10:33,920 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:10:35,394 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:10:42,930 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\base.py changed, reloading.
+2020-08-24 16:10:42,931 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:10:44,310 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:10:49,780 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\local.py changed, reloading.
+2020-08-24 16:10:49,781 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:10:51,173 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:12:38,555 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\local.py changed, reloading.
+2020-08-24 16:12:38,555 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:12:39,960 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:12:44,380 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\local.py changed, reloading.
+2020-08-24 16:12:44,381 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:12:45,754 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:16:03,667 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\base.py changed, reloading.
+2020-08-24 16:16:03,668 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:16:05,117 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:16:18,741 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\base.py changed, reloading.
+2020-08-24 16:16:18,741 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:16:20,107 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:16:24,513 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\base.py changed, reloading.
+2020-08-24 16:16:24,514 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:16:25,889 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:16:28,248 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\base.py changed, reloading.
+2020-08-24 16:16:28,249 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:16:29,644 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:16:51,598 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\base.py changed, reloading.
+2020-08-24 16:16:51,599 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:16:52,983 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:17:58,133 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\base.py changed, reloading.
+2020-08-24 16:17:58,134 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:17:59,486 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:18:06,944 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\base.py changed, reloading.
+2020-08-24 16:18:06,944 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:18:08,324 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:18:15,840 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\base.py changed, reloading.
+2020-08-24 16:18:15,841 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:18:17,215 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:18:24,713 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\base.py changed, reloading.
+2020-08-24 16:18:24,714 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:18:26,099 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:19:50,793 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\base.py changed, reloading.
+2020-08-24 16:19:50,793 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:19:52,264 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:21:10,676 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\local.py changed, reloading.
+2020-08-24 16:21:10,677 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:21:12,130 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:43:46,983 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\base.py changed, reloading.
+2020-08-24 16:43:46,984 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:43:48,412 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:44:16,476 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\base.py changed, reloading.
+2020-08-24 16:44:16,476 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:44:17,904 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 16:45:20,853 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 16:45:20,891 DEBUG    [asyncio:623] Using proactor: IocpProactor

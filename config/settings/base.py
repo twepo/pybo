@@ -18,6 +18,7 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
+
 # WHAT IS..OS.PATH.DIRNAME
 
 # 기존 settings.py의 위치는 C:\projects\mysite\config이고 base.py의 위치는 C:\projects\mysite\config\settings로 디렉터리가 1 Depth 더 늘어났기 때문에 os.path.dirname 을 한번 더 사용하여 BASE_DIR을 설정해 주었다. C:\projects\mysite\config\settings\base.py에서 총 3번의 os.path.dirname이 사용되었으므로 BASE_DIR은 결국 C:\projects\mysite가 될 것이다.
@@ -132,6 +133,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
 
 import time
 f = open("config/pychecker.txt", "w")
