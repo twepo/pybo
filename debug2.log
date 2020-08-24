@@ -606,3 +606,6 @@ NameError: name 'contessxt' is not defined
 2020-08-24 16:44:17,904 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
 2020-08-24 16:45:20,853 DEBUG    [asyncio:623] Using proactor: IocpProactor
 2020-08-24 16:45:20,891 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 17:57:04,847 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 17:57:24,595 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 17:57:24,632 DEBUG    [asyncio:623] Using proactor: IocpProactor
