@@ -609,3 +609,12 @@ NameError: name 'contessxt' is not defined
 2020-08-24 17:57:04,847 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
 2020-08-24 17:57:24,595 DEBUG    [asyncio:623] Using proactor: IocpProactor
 2020-08-24 17:57:24,632 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 18:07:49,300 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 18:32:34,955 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\settings\base.py changed, reloading.
+2020-08-24 18:32:34,956 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 18:32:36,402 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 18:32:52,063 INFO     [django.utils.autoreload:236] C:\projects\mysite\config\urls.py changed, reloading.
+2020-08-24 18:32:52,064 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 18:32:53,598 INFO     [django.utils.autoreload:612] Watching for file changes with StatReloader
+2020-08-24 18:32:59,610 DEBUG    [asyncio:623] Using proactor: IocpProactor
+2020-08-24 18:32:59,654 DEBUG    [asyncio:623] Using proactor: IocpProactor
