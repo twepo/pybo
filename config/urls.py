@@ -39,4 +39,5 @@ urlpatterns = [
 
 
 # 장고 예약 변수임.. 404 오류시, 사용자가 정의한 뷰함수를 호출하는 변수!
+
 handler404 = 'common.views.page_not_found'
