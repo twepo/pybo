@@ -31,6 +31,8 @@ from django.db.models import Q, Count
 
 
 def index(request):
+
+	3/0
 	
 	page = request.GET.get('page',1)
 	kw = request.GET.get('kw','')
