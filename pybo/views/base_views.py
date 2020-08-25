@@ -42,6 +42,9 @@ def index(request):
 
 
 	logger.info("INFO 레벨로 출력한다!")
+	logger.warning("warning 레벨로 출력한다!")
+	logger.error("error 레벨로 출력한다!")
+	logger.debug("debug 레벨로 출력한다!")
 	
 	page = request.GET.get('page',1)
 	kw = request.GET.get('kw','')
