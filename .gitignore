@@ -6,3 +6,4 @@ __pycache__
 .log
 pychecker.txt
 debug2.log
+logs
