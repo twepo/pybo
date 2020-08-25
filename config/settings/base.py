@@ -204,5 +204,9 @@ LOGGING = {
             'level': 'INFO',
             'propagate': False,
         },
+        'pybo':{
+            'hander':['console','file'],
+            'level':'INFO'
+        }
     }
 }

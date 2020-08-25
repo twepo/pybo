@@ -30,9 +30,21 @@ from django.db.models import Q, Count
 
 
 
+import logging
+
+logger = logging.getLogger('pybo')
+# pybo는.. 로거명이다.
+# 이걸로 logger.debug, logger.error, logger.warning
+
+# 이 로거 객체는.. 이제 이걸로 info,warning,error,debug 메소드를 쓸 수 있다..!
+
 def index(request):
 
-	3/0
+
+	logger.info("INFO 레벨로 출력한다!")
+	logger.warning("warning 레벨로 출력한다!")
+	logger.error("error 레벨로 출력한다!")
+	logger.debug("debug 레벨로 출력한다!")
 	
 	page = request.GET.get('page',1)
 	kw = request.GET.get('kw','')
