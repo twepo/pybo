@@ -33,6 +33,9 @@ from django.db.models import Q, Count
 import logging
 
 logger = logging.getLogger('pybo')
+
+print(">>>")
+print(__name__)
 # pybo는.. 로거명이다.
 # 이걸로 logger.debug, logger.error, logger.warning
 
