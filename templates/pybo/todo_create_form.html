@@ -1,0 +1,19 @@
+
+
+<form action="" method="POST">
+	{% csrf_token %}
+
+	THISIS TODO_FORM..WORKS?
+	
+	
+	{{form.as_p}}
+	<input type="submit" value="전송">
+
+
+	
+	{% for todo in todos %}
+		<h5>{{todo.title}}</h5>
+	{% endfor %}
+		
+
+</form>

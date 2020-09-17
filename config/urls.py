@@ -20,21 +20,36 @@ from django.urls import include, path
 from django.conf import settings
 from django.conf.urls import include, url
 
-
 from pybo.views import base_views
 
+
+from lg import views
 
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("pybo/", include("pybo.urls")),
+    # path("pybo/", include("pybo.urls")),
     path("common/",include("common.urls")),
-    path('', base_views.index, name='index'), 
+
+    
+    
+    # path('', include('lg.urls')),
+
+    path('', views.index, name='index'),
+
 ]
 
 
 # pybo 매핑은 위에서 되어있기 때문에,
 # pybo 에서는 따로 매핑하지 않아도 된다.
+
+
+
+if settings.DEBUG:
+    import debug_toolbar
+    urlpatterns = [
+        path('__debug__/', include(debug_toolbar.urls)),
+    ] + urlpatterns
 
 
 

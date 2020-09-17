@@ -15,8 +15,6 @@ from ..models import Question, Answer, Comment
 
 
 
-
-
 @login_required(login_url="common:login")
 def comment_create_question(request,question_id):
 	question = get_object_or_404(Question,pk=question_id)

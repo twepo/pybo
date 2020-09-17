@@ -31,7 +31,18 @@ class QuestionForm(forms.ModelForm):
 
     
     
+
+
+from pybo.models import Todo
+
+class TodoForm(forms.ModelForm):
+    class Meta:
+        model = Todo
+        fields='__all__'
+
     
+
+        
     
 
 

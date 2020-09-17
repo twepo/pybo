@@ -5,7 +5,30 @@
 
 
 {% block content %}
-	
+
+
+<a href="{% url 'pybo:about' %}">TEMPLATE_VIEW_GO</a>
+<br>
+<a href="{% url 'pybo:hresponse' %}">HTTPRESPONSE</a>
+<br>
+<a href="{% url 'pybo:reverse' 1869 %}">REVERSE</a>
+<br>
+<a href="{% url 'pybo:resolveurl_view' 186974 %}">resolve_url</a>
+<br>
+<a href="{% url 'pybo:redirect_view' 186968 %}">redirect</a>
+<br>
+<a href="{% url 'pybo:vote_answer' 186968 %}">url-template-tag(REVERSE)</a>
+<br>
+<a href="{% url 'pybo:reverselazy_view' 1869 %}">reverse lazy</a>
+<br>
+<a href="{% url 'pybo:resolve_view' 1869 %}">resolssve??</a>
+
+<br>
+<a href="{% url 'pybo:home' %}">HOME</a>
+
+
+<br>
+<a href="{% url 'pybo:q_list' %}">q_list</a>
 
 <!-- ---------------------------------------- [edit] ---------------------------------------- -->
 <div class="container my-3">
@@ -48,9 +71,12 @@
 				
 				
 				<td>
+
 					<a href="{% url 'pybo:detail' question.id %}">{{ question.subject }}</a>
-				
-				
+					<br>
+					<a href="{{question.get_absolute_url}}">ABSOLUTE_URL</a>
+
+					
 					
 					{% if question.answer_set.count > 0 %}
 						<span>{{ question.answer_set.count }}</span>	
@@ -145,6 +171,8 @@ this :value :
 
 
 
+
+
 	
 
 
@@ -191,4 +219,18 @@ this :value :
   });
 
 </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br>
 {% endblock script %}

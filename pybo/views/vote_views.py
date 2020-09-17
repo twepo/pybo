@@ -56,4 +56,3 @@ def vote_answer(request,answer_id):
 
 
 
-
