@@ -1,0 +1,389 @@
+{% extends 'base.html' %}
+{% load pybo_filter %}
+{% block content %}
+
+
+
+
+
+
+
+<body>
+
+<style>
+
+
+
+
+
+
+
+
+
+
+html{
+	line-height: 1.15;
+	font-size: 1rem;	
+	font-family : 'Noto Sans KR';	
+}
+
+
+
+
+.wrapper{
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+.container{
+	margin: 0 auto;
+	
+	max-width: 1400px;
+	min-width: 1400px;
+
+	border: 2px solid red;
+	background: coral;
+}
+
+
+
+
+
+
+
+
+/* 
+이걸 1200으로 하면 반갈죽을 포기해야한다..맞나?
+ */
+
+
+
+.card_list_box{
+
+	/* background: gold; */
+	/* min-width: 1400px; */
+	/* width: 100%; */
+	/* VAR-READY */
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+}
+
+
+.card_list_box:after{
+	content: "";
+  	flex-grow : 1;
+}
+
+
+
+.card{
+	background: green;
+	border: 1px solid purple;
+	
+	width: 224px;
+	margin-right: 10.4px;
+
+
+	margin-bottom: 10px;
+	/* height: 150px; */
+	height: 285px;
+
+}
+
+.card:nth-child(6n){
+	margin-right: 0;
+	background: blue;
+}
+
+.card a{
+	width: 100%;
+	height: 100%;
+	background: red;
+}
+
+
+img.card_img{
+	width: 100%;
+}
+
+.card_title{
+	padding: 10px 0;
+}
+
+
+
+
+
+/* 미리 준비.. 1200으로 */
+@media screen and (max-width: 1400px){
+	.container{
+
+		min-width: 940px;
+		max-width: 940px;
+		background: cyan;
+
+	}
+
+	.card{
+		width: 180px;
+		margin-right: 8.2px;		
+	}
+
+	.card:nth-child(6n){
+		margin-right: 8.2px;
+		background: yellow;
+	}
+
+	.card:nth-child(5n){
+		margin-right: 0;
+		background: blue;
+	}
+
+
+
+} 
+
+
+
+
+
+
+
+@media screen and (max-width: 500px){
+	
+	.container{
+		min-width: 100%;
+		max-width: 100%;
+		background: yellow;
+
+	}
+
+	.card_list_box{
+		padding: 0 5px;
+	}
+
+	.card{
+		width: 50%;
+		height: inherit;
+		padding: 5px 5px 15px 5px;
+	}
+
+	.card,
+	.card:nth-child(5n),
+	.card:nth-child(6n){
+		margin-right: inherit;
+	}
+
+}
+
+
+
+
+</style>
+
+
+
+
+<div class="wrapper">
+	<div class="container">top</div>
+	
+	<div class="container">banner</div>
+
+	<div class="container">
+		<!-- <a href="{% url 'lg:campaign_view' %}">TESTER</a> -->
+		<!-- <a href="{% url 'lg:campaign_view' %}">TESTER</a> -->
+		<ul class="card_list_box"></ul>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+	
+{% endblock %}
+
+
+
+
+
+	
+
+
+
+
+
+
+
+{% block script %}
+<script>
+
+
+	var div_list = "";
+
+	console.log('okay we need ajax here.');
+
+
+	$.each(obj, function(i, item) {
+		 
+			var div = `
+				<li class='card'>
+					<a href="{% url 'lg:campaign_view' %}">
+						<div class='card_img_box'>
+							<img class='card_img' src="static/img/${obj[i].img_path}" alt="">
+						</div>
+						<div class='card_title'>TITLE ${obj[i].channel}</div>
+						<div class='card_subtitle'>subtitle</div>
+					</a>
+				</li>
+				`	
+
+			div_list += div;
+
+	});
+
+
+	$('.card_list_box').append(div_list)
+	
+/* 
+그니까..업데이트될때마다, 걍 localstorage에 넣어라는 말이지?
+ */ 
+
+
+
+
+
+
+	var loading = false;
+
+
+	lang = sessionStorage.getItem("index")
+
+	let index = lang
+	console.log('sesson : ', lang);
+
+	$(window).scroll(function(){
+        if($(window).scrollTop()+ 200 >= $(document).height() - $(window).height()){
+            
+
+				console.log('index',index);
+
+
+
+				
+
+
+
+				sessionStorage.setItem("index", index);
+
+
+
+
+				
+				// if(!loading) {
+
+				// 	 console.log('complete');
+            //     loading = true; //실행 불가능 상태로 변경
+				// 	//  next_load(); 
+				// 	$('.card_list_box').append(div_list)
+	
+
+            // }
+            // else            //실행 불가능 상태라면?
+            // {
+				// 	console.log('now loading hello');
+            //    //  alert('다음페이지를 로딩중입니다.');  
+            // }
+
+				index++
+
+        }
+    });  
+
+
+	 
+
+
+
+
+</script>	
+
+
+{% endblock script %}
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

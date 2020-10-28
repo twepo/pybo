@@ -1,0 +1,520 @@
+
+
+<!DOCTYPE html>
+<html lang="ko" style="margin: 0;padding: 0;border: 0;">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MS워드 보기</title>
+    <style>
+        html,
+        body,
+        div,
+        span,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        em,
+        img,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td {
+            font-family: 'Malgun Gothic';
+        }
+    </style>
+</head>
+<body style="margin: 0;padding: 0;border: 0;">
+    <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+        </tr>
+    </table>
+    <table class="table-subject" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td style="margin: 0;padding: 15px 0;border: 0;color: #000;font-size: 30px;letter-spacing: -2px;line-height: 1.4;text-align: center;word-break: break-all;">PHP 백엔드 + 프론트엔드 개발자</td>
+        </tr>
+    </table>
+
+    <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+        </tr>
+    </table>
+        <table class="table table-profile-primary" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="col1 photo" rowspan="4" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 38px;vertical-align: middle;width: 16%;text-align: center;">
+                <img src="https://file2.jobkorea.co.kr/Net/UserPhoto/PhotoView?FN=2019\10\16\JK_GG_ned4spd.jpg" alt="" width="140" height="182" style="margin-top:0;margin-bottom:0;margin-right:0;margin-left:0;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;box-sizing:border-box;font-family:'Malgun Gothic';color:#000;font-size:12px;border-width:0;border-style:none;vertical-align:top;width:140px;height:182px;">
+            </td>
+            <td class="name" colspan="4" style="margin: 0;padding: 0 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 38px;vertical-align: middle;">
+                <span class="name" style="margin: 0;padding: 0;border: 0;font-size: 12px;color: #000;">최강규</span>
+                <span class="sex" style="margin: 0;padding: 0;border: 0;margin-left: 3px;font-size: 12px;color: #888;">남</span>
+                <span class="year" style="margin: 0;padding: 0;border: 0;margin-left: 3px;font-size: 12px;color: #888;">1989년, </span>
+                <span class="age" style="margin: 0;padding: 0;border: 0;margin-left: 3px;font-size: 12px;color: #888;">32세</span>
+            </td>
+        </tr>
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="col2" style="margin: 0;padding: 0 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 38px;vertical-align: middle;width: 15%;font-weight: bold;">휴대폰</td>
+            <td class="col3" style="margin: 0;padding: 0 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 38px;vertical-align: middle;width: 27%;">010-6276-7817</td>
+                        <td class="col4" style="margin: 0;padding: 0 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 38px;vertical-align: middle;width: 15%;font-weight: bold;">Email</td>
+            <td class="col5" style="margin: 0;padding: 0 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 38px;vertical-align: middle;width: 27%;">gobrisebane@gmail.com</td>
+        </tr>
+                        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="col2" style="margin: 0;padding: 0 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 38px;vertical-align: middle;width: 15%;font-weight: bold;">주소</td>
+            <td class="col3" colspan="3" style="margin: 0;padding: 0 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 38px;vertical-align: middle;width: 27%;">경기 구리시 교문1동</td>
+        </tr>
+    </table>
+    <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+        </tr>
+    </table>
+    <table class="table table-profile-summary" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;table-layout: fixed;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="td1" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 25%;height: 50px;text-align: center;vertical-align: top;">
+                <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                    </tr>
+                </table>
+                <div class="content-header" style="margin: 0;padding: 0;border: 0;margin-bottom: 7px;color: #888;">학력</div>
+                <div class="content-body" style="margin: 0;padding: 0;border: 0;">
+                    <div class="description ellipsis" style="margin: 0;padding: 0;border: 0;margin-bottom: 5px;word-break: break-all;">배명고등학교</div>
+                    <div class="options" style="margin: 0;padding: 0;border: 0;">
+                        <div class="option" style="margin: 0;padding: 0;border: 0;margin-bottom: 5px;color: #39f;">고등학교</div>
+                        <div class="option" style="margin: 0;padding: 0;border: 0;margin-bottom: 5px;color: #39f;">졸업 </div>
+                    </div>
+                </div>
+                <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+            <td class="td2" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 25%;height: 50px;text-align: center;vertical-align: top;">
+                <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                    </tr>
+                </table>
+                <div class="content-header" style="margin: 0;padding: 0;border: 0;margin-bottom: 7px;color: #888;">경력</div>
+
+
+
+
+                        <div class="content-body" style="margin: 0;padding: 0;border: 0;">
+                            <div class="description ellipsis" style="margin: 0;padding: 0;border: 0;margin-bottom: 5px;word-break: break-all;">비즈팝스</div>
+                            <div class="options" style="margin: 0;padding: 0;border: 0;">
+                                <div class="option" style="margin: 0;padding: 0;border: 0;margin-bottom: 5px;color: #39f;">재직 중</div>
+                                <div class="option" style="margin: 0;padding: 0;border: 0;margin-bottom: 5px;color: #39f;">총 5년</div>
+                            </div>
+                        </div>
+
+
+
+
+
+                <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+            <td class="td3" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 25%;height: 50px;text-align: center;vertical-align: top;">
+                <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                    </tr>
+                </table>
+                <div class="content-header" style="margin: 0;padding: 0;border: 0;margin-bottom: 7px;color: #888;">인턴·대외활동 / 해외경험</div>
+                <div class="content-body" style="margin: 0;padding: 0;border: 0;">
+                    <div class="description ellipsis" style="margin: 0;padding: 0;border: 0;margin-bottom: 5px;word-break: break-all;"></div>
+                    <div class="description" style="margin: 0;padding: 0;border: 0;margin-bottom: 5px;word-break: break-all;">
+                        
+                    </div>
+                </div>
+                <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+            <td class="td4" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 25%;height: 50px;text-align: center;vertical-align: top;">
+                <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                    </tr>
+                </table>
+                <div class="content-header" style="margin: 0;padding: 0;border: 0;margin-bottom: 7px;color: #888;">자격증 / 어학</div>
+                <div class="content-body" style="margin: 0;padding: 0;border: 0;">
+                    <div class="description ellipsis" style="margin: 0;padding: 0;border: 0;margin-bottom: 5px;word-break: break-all;"></div>
+                    <div class="description ellipsis" style="margin: 0;padding: 0;border: 0;margin-bottom: 5px;word-break: break-all;">
+                        
+                    </div>
+                </div>
+                <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+        </tr>
+    </table>
+    <table class="table table-header" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <th class="th" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 16px;width: 1px;white-space: nowrap;text-align: left;">학력</th>
+        </tr>
+    </table>
+    <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+        </tr>
+    </table>
+    <table class="table table-education" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="date" style="margin: 0;padding: 21px 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;margin-bottom: 7px;">
+                <p style="margin: 0;padding: 0;border: 0;">2004</p>
+                <div class="state" style="margin: 0;padding: 0;border: 0;color: #3399ff;">졸업 </div>
+            </td>
+            <td class="content" style="margin: 0;padding: 21px 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;">
+                <table class="table-education-header" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;">
+                            <span class="name" style="margin: 0;padding: 0;border: 0;font-weight: bold;">배명고등학교</span>
+                            <span class="line" style="margin: 0;padding: 0;border: 0;margin-left: 11px;color: #666;">  </span>
+                        </td>
+                    </tr>
+                </table>
+                <table class="table-education-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 5px;"></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+        </tr>
+    </table>
+    <table class="table-header table-header-career" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <th class="th" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 16px;width: 1px;white-space: nowrap;text-align: left;">경력</th>
+            <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;vertical-align: bottom;text-align: left;">
+                <span class="total" style="margin: 0;padding: 0;border: 0;margin-left: 6px;"> 총 5년</span>
+            </td>
+        </tr>
+    </table>
+    <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+        </tr>
+    </table>
+    <table class="table table-career" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="date" style="margin: 0;padding: 21px 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;margin-bottom: 7px;">
+                <p style="margin: 0;padding: 0;border: 0;">2019. 08 ~ 재직중</p>
+                <div class="term" style="margin: 0;padding: 0;border: 0;color: #3399ff;"></div>
+            </td>
+            <td class="content" style="margin: 0;padding: 21px 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;">
+                <table class="table-career-header" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td class="name" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;width: 1px;white-space: nowrap;font-weight: bold;text-align: left;">비즈팝스</td>
+                        <td class="is-private" style="margin: 0;padding: 0;border: 0;color: #222;font-size: 12px;width: 1px;padding-left: 2px;white-space: nowrap;text-align: left;"></td>
+                        <td class="position" style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;padding-left: 11px;text-align: left;">개발 과장 </td>
+                    </tr>
+                </table>
+                <table class="table-career-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;table-layout: fixed;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 9px;">&nbsp;</td>
+                    </tr>
+                </table>
+                <table class="table-career-description" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;">
+                            장고 웹개발, Javascript 프론트앤드 개발 , 퍼블리싱
+                        </td>
+                    </tr>
+                </table>
+                <table class="table-career-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;table-layout: fixed;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 9px;">&nbsp;</td>
+                    </tr>
+                </table>
+                <table class="table-career-info" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;table-layout: fixed;">
+                                        <tr style="margin: 0;padding: 0;border: 0;">
+                        <th style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;width: 73px;text-align: left;font-weight: normal;">주요직무</th>
+                        <td style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;text-align: left;">웹프로그래머</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="date" style="margin: 0;padding: 21px 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;margin-bottom: 7px;">
+                <p style="margin: 0;padding: 0;border: 0;">2016. 08 ~ 2019. 03</p>
+                <div class="term" style="margin: 0;padding: 0;border: 0;color: #3399ff;">2년 8개월</div>
+            </td>
+            <td class="content" style="margin: 0;padding: 21px 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;">
+                <table class="table-career-header" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td class="name" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;width: 1px;white-space: nowrap;font-weight: bold;text-align: left;">넷엔터프라이즈</td>
+                        <td class="is-private" style="margin: 0;padding: 0;border: 0;color: #222;font-size: 12px;width: 1px;padding-left: 2px;white-space: nowrap;text-align: left;"></td>
+                        <td class="position" style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;padding-left: 11px;text-align: left;">개발 과장 </td>
+                    </tr>
+                </table>
+                <table class="table-career-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;table-layout: fixed;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 9px;">&nbsp;</td>
+                    </tr>
+                </table>
+                <table class="table-career-description" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;">
+                            PHP기반 웹사이트 제작, 유지보수
+                        </td>
+                    </tr>
+                </table>
+                <table class="table-career-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;table-layout: fixed;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 9px;">&nbsp;</td>
+                    </tr>
+                </table>
+                <table class="table-career-info" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;table-layout: fixed;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <th style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;width: 73px;text-align: left;font-weight: normal;">연봉</th>
+                        <td style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;text-align: left;">3,000 만원</td>
+                    </tr>
+                                        <tr style="margin: 0;padding: 0;border: 0;">
+                        <th style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;width: 73px;text-align: left;font-weight: normal;">주요직무</th>
+                        <td style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;text-align: left;">웹프로그래머</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="date" style="margin: 0;padding: 21px 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;margin-bottom: 7px;">
+                <p style="margin: 0;padding: 0;border: 0;">2014. 06 ~ 2015. 06</p>
+                <div class="term" style="margin: 0;padding: 0;border: 0;color: #3399ff;">1년 1개월</div>
+            </td>
+            <td class="content" style="margin: 0;padding: 21px 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;">
+                <table class="table-career-header" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td class="name" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;width: 1px;white-space: nowrap;font-weight: bold;text-align: left;">위메프</td>
+                        <td class="is-private" style="margin: 0;padding: 0;border: 0;color: #222;font-size: 12px;width: 1px;padding-left: 2px;white-space: nowrap;text-align: left;"></td>
+                        <td class="position" style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;padding-left: 11px;text-align: left;">개발 대리 </td>
+                    </tr>
+                </table>
+                <table class="table-career-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;table-layout: fixed;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 9px;">&nbsp;</td>
+                    </tr>
+                </table>
+                <table class="table-career-description" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;">
+                            PHP 기반 웹사이트 퍼블리싱 및 개발
+                        </td>
+                    </tr>
+                </table>
+                <table class="table-career-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;table-layout: fixed;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 9px;">&nbsp;</td>
+                    </tr>
+                </table>
+                <table class="table-career-info" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;table-layout: fixed;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <th style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;width: 73px;text-align: left;font-weight: normal;">연봉</th>
+                        <td style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;text-align: left;">2,800 만원</td>
+                    </tr>
+                                        <tr style="margin: 0;padding: 0;border: 0;">
+                        <th style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;width: 73px;text-align: left;font-weight: normal;">주요직무</th>
+                        <td style="margin: 0;padding: 0;border: 0;color: #666;font-size: 12px;text-align: left;">웹프로그래머</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+            </table>
+
+
+                        <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+        </tr>
+    </table>
+    <table class="table table-header" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <th class="th" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 16px;width: 1px;white-space: nowrap;text-align: left;">자기소개서</th>
+        </tr>
+    </table>
+    <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+        </tr>
+    </table>
+    <table class="table table-introduction" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="td" style="margin: 0;padding: 15px 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;">
+                <table class="table-introduction-header" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;font-weight: bold;">자기소개서</td>
+                    </tr>
+                </table>
+                <table class="table-introduction-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 9px;"></td>
+                    </tr>
+                </table>
+                <table class="table-introduction-body" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+                    <tr style="margin: 0;padding: 0;border: 0;">
+                        <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;">
+안녕하세요!<br/><br/>최강규라고 합니다.<br/><br/><br/>사용가능한 백엔드 언어<br/>Python Django , PHP<br/><br/>프론트앤드 언어<br/>Javascript, JQuery<br/><br/>현재 배우는 언어<br/>Vue.js , Node.js<br/><br/><br/><br/>참여프로젝트:<br/><br/>1) PHP/MYSQL 기반 반응형 커뮤니티 (유저단 개발/디자인) / 순수PHP<br/>http://www.guamkorean.com/<br/>참여 : 디자인 + 퍼블리싱 + 백엔드 + 프론트앤드<br/><br/><br/>2) PHP/MYSQL 기반 반응형 커뮤니티 / 순수PHP<br/>http://www.guamkorean.com/sub/admin<br/>id:testadmin<br/>pw:testadmin1234<br/>참여 : 백엔드 + 프론트앤드 <br/><br/><br/>3) 괌한인회 Flutter 기반 어플리케이션 (개발/디자인)<br/>https://play.google.com/store/apps/details?id=com.flutter.guamkorean<br/><br/><br/>4) 현대자동차 총무관리 프로그램 <br/>-  퍼블리싱<br/>≫ 현재 퍼블리싱 코드가 자택에 있어서 제가 퇴근 후 다시한번 전달드리겠습니다.<br/><br/><br/>5) <br/>- 개발, 디자인, 퍼블리싱<br/>www.LogRival.com <br/>- 현재 개발중이어서 11월달 오픈 예정입니다.<br/>- 레퍼런스 사이트를 확인 부탁 드리겠습니다.<br/><br/>https://reviewshare.io/<br/>참여 : 디자인 + 퍼블리싱 + 백엔드 + 프론트앤드<br/><br/><br/>6) 괌 액티비티 예약사이트 썸머드림괌<br/>제작된 플랫폼으로 예약사이트로 개조하였습니다. <br/>종전 사이트가 폐쇄되어 레퍼런스로 사용하였던 사이트를 업로드합니다.<br/>참여 : PHP, MYSQL, 프론트앤드 , 호텔예약 달력 연동,이니시스 PG결제연동<br/>https://www.guamplay.com<br/><br/><br/>7) 괌 호텔예약사이트 PackEasy <br/>참여 : PHP, MYSQL 백엔드 개발<br/>http://packeasy.co.kr<br/><br/><br/>8) 괌 실시간렌트카 예약사이트 디자인/개발<br/>참여 : PHP, MYSQL 백엔드 개발<br/>http://hktrent.com/<br/><br/><br/><br/><br/>처음 개발을 php로 시작하였지만, 현재는 Django로 프로젝트를 진행 하고 있습니다.<br/><br/>만약 Codeigniter나 Laravel을 해야 할 경우 빨리 배워서 적응할 수 있도록 노력하겠습니다.<br/><br/>                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+        </tr>
+    </table>
+    <table class="table table-header" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <th class="th" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 16px;width: 1px;white-space: nowrap;text-align: left;">포트폴리오</th>
+        </tr>
+    </table>
+    <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+        </tr>
+    </table>
+    <table class="table table-portfolio" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+                    <td style="margin: 0;padding: 0 10px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 51px;"><a href="http://www.guamkorean.com/" target="_blank"><img src="https://i.jobkorea.kr/content/images/text_user/resume/view/icon/icon-file-url.png" alt="" style="margin: 0;padding: 0;border: 0 none;vertical-align: top;margin-right: 5px;"> http://www.guamkorean.com/</a></td>
+
+        </tr>
+        
+    </table>
+        <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+        </tr>
+    </table>
+    <table class="table table-header" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <th class="th" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 16px;width: 1px;white-space: nowrap;text-align: left;">취업우대사항</th>
+        </tr>
+    </table>
+    <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+        </tr>
+    </table>
+    <table class="table table-jobpreference" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <th class="col1" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;height: 51px;vertical-align: middle;background-color: #fcfcfc;">보훈대상 여부</th>
+            <td class="td" style="margin: 0;padding: 0 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 51px;vertical-align: middle;">-</td>
+            <th class="col2" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;height: 51px;vertical-align: middle;background-color: #fcfcfc;">취업보호대상 여부</th>
+            <td class="td" style="margin: 0;padding: 0 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 51px;vertical-align: middle;">-</td>
+            <th class="col3" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;height: 51px;vertical-align: middle;background-color: #fcfcfc;">고용지원금대상 여부</th>
+            <td class="td" style="margin: 0;padding: 0 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 51px;vertical-align: middle;">-</td>
+        </tr>
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <th class="th" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;height: 51px;vertical-align: middle;background-color: #fcfcfc;">병역사항</th>
+            <td colspan="3" style="margin: 0;padding: 0 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 51px;vertical-align: middle;">
+[군필] 2012. 11 ~ 2013. 11 육군 병장 제대            </td>
+            <th class="th" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;height: 51px;vertical-align: middle;background-color: #fcfcfc;">장애여부</th>
+            <td class="td" style="margin: 0;padding: 0 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 51px;vertical-align: middle;">
+                -
+            </td>
+        </tr>
+    </table>
+    <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+        </tr>
+    </table>
+    <table class="table table-header" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <th class="th" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 16px;width: 1px;white-space: nowrap;text-align: left;">희망근무조건</th>
+        </tr>
+    </table>
+    <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+        </tr>
+    </table>
+    <table class="table table-hopework" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <th class="th" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;height: 51px;background-color: #fcfcfc;">고용형태</th>
+            <td class="td" style="margin: 0;padding: 0 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 51px;vertical-align: middle;">정규직</td>
+        </tr>
+                <tr style="margin: 0;padding: 0;border: 0;">
+            <th class="th" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;height: 51px;background-color: #fcfcfc;">희망근무지</th>
+            <td class="td" style="margin: 0;padding: 0 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 51px;vertical-align: middle;">서울전지역, 경기 구리시, 경기 성남시 분당구</td>
+        </tr>
+                <tr style="margin: 0;padding: 0;border: 0;">
+            <th class="th" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;height: 51px;background-color: #fcfcfc;">희망연봉</th>
+            <td class="td" style="margin: 0;padding: 0 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 51px;vertical-align: middle;">4,000만원 이상</td>
+        </tr>
+                <tr style="margin: 0;padding: 0;border: 0;">
+            <th class="th" style="margin: 0;padding: 0;border: 1px solid #edeef0;color: #000;font-size: 12px;width: 100px;height: 51px;background-color: #fcfcfc;">지원분야</th>
+            <td class="td content" style="margin: 0;padding: 5px 18px;border: 1px solid #edeef0;color: #000;font-size: 12px;height: 51px;vertical-align: middle;">
+                <table class="table-hopework-content" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;table-layout: fixed;margin-bottom: 0;">
+                        <tr style="margin: 0;padding: 0;border: 0;">
+                            <th style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;width: 90px;background-color: transparent;font-weight: normal;text-align: left;vertical-align: top;">직무</th>
+                            <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;text-align: left;">
+                                <table style="margin: 0;padding: 0;border: 0;border-collapse: collapse;">
+                                    <tbody>
+                                                <tr style="margin: 0;padding: 0;border: 0;">
+                                                    <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;text-align: left;">웹프로그래머 &gt; php, MySQL, 웹프로그래머, AJAX</td>
+                                                </tr>
+                                                <tr style="margin: 0;padding: 0;border: 0;">
+                                                    <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;text-align: left;">HTML&#183;퍼블리싱&#183;UI개발 &gt; CSS, HTML5, 자바스크립트, CSS3, HTML코딩</td>
+                                                </tr>
+                                                <tr style="margin: 0;padding: 0;border: 0;">
+                                                    <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;text-align: left;">웹디자인 &gt; 포토샵, 일러스트레이터, HTML, CSS, 자바스크립트</td>
+                                                </tr>
+                                                <tr style="margin: 0;padding: 0;border: 0;">
+                                                    <td style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;text-align: left;">출판&#183;편집디자인 &gt; 편집디자인(IBM), 카탈로그편집, 인디자인, 교재편집, 북디자인</td>
+                                                </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table class="table-blank" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;margin-bottom: 0;table-layout: fixed;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="td" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;height: 10px;">&nbsp;</td>
+        </tr>
+    </table>
+    <table class="table table-sign" style="margin: 0;padding: 0;border: 0;border-collapse: collapse;width: 100%;">
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="message" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 22px;text-align: center;padding-bottom: 13px;">위의 모든 기재사항은 사실과 다름없음을 확인합니다.</td>
+        </tr>
+        <tr style="margin: 0;padding: 0;border: 0;">
+            <td class="Writer" style="margin: 0;padding: 0;border: 0;color: #000;font-size: 12px;text-align: center;">작성자 : 최강규</td>
+        </tr>
+    </table>
+</body>
+</html>

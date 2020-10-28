@@ -1,0 +1,539 @@
+{% extends 'base.html' %}
+{% load pybo_filter %}
+{% block content %}
+
+<body>
+	<style>
+		html {
+			line-height: 1.15;
+			font-size: 1rem;
+			font-family: 'Noto Sans KR';
+		}
+
+
+
+
+		.wrapper {
+			width: 100%;
+			height: 100%;
+		}
+
+
+
+
+		.container {
+			margin: 0 auto;
+
+			max-width: 1400px;
+			min-width: 1400px;
+
+			border: 2px solid red;
+			background: coral;
+		}
+
+
+
+
+
+
+
+
+		/*
+이걸 1200으로 하면 반갈죽을 포기해야한다..맞나?
+ */
+
+
+
+		.card_list_box {
+
+			/* background: gold; */
+			/* min-width: 1400px; */
+			/* width: 100%; */
+			/* VAR-READY */
+
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+		}
+
+
+		.card_list_box:after {
+			content: "";
+			flex-grow: 1;
+		}
+
+
+
+		.card {
+			background: green;
+			border: 1px solid purple;
+
+			width: 224px;
+			margin-right: 10.4px;
+
+
+			margin-bottom: 10px;
+			/* height: 150px; */
+			height: 285px;
+
+		}
+
+		.card:nth-child(6n) {
+			margin-right: 0;
+			background: blue;
+		}
+
+		.card a {
+			width: 100%;
+			height: 100%;
+			background: red;
+		}
+
+
+		img.card_img {
+			width: 100%;
+		}
+
+		.card_title {
+			padding: 10px 0;
+		}
+
+
+
+
+
+		/* 미리 준비.. 1200으로 */
+		@media screen and (max-width: 1400px) {
+			.container {
+
+				min-width: 940px;
+				max-width: 940px;
+				background: cyan;
+
+			}
+
+			.card {
+				width: 180px;
+				margin-right: 8.2px;
+			}
+
+			.card:nth-child(6n) {
+				margin-right: 8.2px;
+				background: yellow;
+			}
+
+			.card:nth-child(5n) {
+				margin-right: 0;
+				background: blue;
+			}
+
+
+
+		}
+
+
+
+
+
+
+
+		@media screen and (max-width: 500px) {
+
+			.container {
+				min-width: 100%;
+				max-width: 100%;
+				background: yellow;
+
+			}
+
+			.card_list_box {
+				padding: 0 5px;
+			}
+
+			.card {
+				width: 50%;
+				height: inherit;
+				padding: 5px 5px 15px 5px;
+			}
+
+			.card,
+			.card:nth-child(5n),
+			.card:nth-child(6n) {
+				margin-right: inherit;
+			}
+
+		}
+	</style>
+	<div class="wrapper">
+		<div class="container">top</div>
+		<div class="container">banner</div>
+
+
+		<div class="container">
+
+
+			<div class="filter_box category_box">
+				<a href="#" data-val="beauty">beauty</a>
+				<a href="#" data-val="cafe">cafe</a>
+				<a href="#" data-val="culture">culture</a>
+				<a href="#" data-val="food">food</a>
+				<a href="#" data-val="living">living</a>
+				<a href="#" data-val="tech">tech</a>
+			</div>
+
+			<br>
+
+			<div class="filter_box channel_box">
+				<a href="#" data-val="BLOG">BLOG</a>
+				<a href="#" data-val="CAFE">CAFE</a>
+				<a href="#" data-val="INSTAGRAM">INSTAGRAM</a>
+				<a href="#" data-val="SHOPPING">SHOPPING</a>
+				<a href="#" data-val="YOUTUBE">YOUTUBE</a>
+
+			</div>
+		</div>
+
+
+
+		<div class="container">
+			<!-- <a href="{% url 'lg:campaign_view' %}">TESTER</a> -->
+			<!-- <a href="{% url 'lg:campaign_view' %}">TESTER</a> -->
+			<ul class="card_list_box"></ul>
+		</div>
+	</div>
+</body>
+{% endblock %}
+{% block script %}
+<script>
+
+
+
+
+
+
+function paramsToObject(entries) {
+	//https://stackoverflow.com/questions/8648892/how-to-convert-url-parameters-to-a-javascript-object
+  let result = {}
+  let item_array = []
+  for(let entry of entries) { // each 'entry' is a [key, value] tupple
+	 const [key, value] = entry;
+	 result[key] = value.split(',');
+  }
+  return result;
+}
+
+
+
+const url_params = new URLSearchParams(window.location.search);
+const entries = url_params.entries(); //returns an iterator of decoded [key,value] tuples
+const param_json = paramsToObject(entries); //{abc:"foo",def:"[asf]",xyz:"5"}
+
+console.log(param_json);
+
+
+
+selected_filter_item = 'cafe'
+
+filter_arr = ['category']
+
+var urlParams = new URLSearchParams(window.location.search);
+var param_keys = Object.keys(param_json);
+console.log('PARAM KEYS: : ', param_keys);
+
+
+filter_arr.forEach(function(filter_title){
+
+	if(param_keys.includes(filter_title)){
+
+		/*
+		param이 있어도, 값이 없다면?
+		*/
+
+		//console.log('-yes- param here');
+		//console.log('but canyou know therer is value?');
+		//console.log('walwal..cetegory value');
+		//console.log(param_json.category);
+
+
+		if(param_json.category.includes(selected_filter_item)){
+
+			console.log('it has cafe..delete');
+
+		} else {
+
+			console.log('it doesnt..so add');
+
+			//현재 url에서 category 값들을 받음
+			var current_url_params = urlParams.get(filter_title)
+
+			//추가함
+			var new_param = current_url_params.concat(",cafe")
+			window.history.pushState("", "", "?category="+new_param)
+
+
+		}
+
+
+
+
+
+
+	}
+
+	//else {
+	// 여긴 왜 넣었는지 확인필요함
+	//	console.log('-nope- param no');
+	//	var new_param = "cafe"
+
+	//}
+
+
+	//AH.. NEW PARAM.
+
+
+
+	//그리고 url에 반영하기
+	//// 이부분은.. 맨 마지막에 ? 체크해서 넣어주는게 어떨가..
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+function getQueryParams() {
+  // https://codippa.com/how-to-get-url-parameters-in-javascript/
+  let result = [];
+  let params = window.location.search;
+  params = params.substr(1);
+  let queryParamArray = params.split('&');
+  queryParamArray.forEach(function(queryParam) {
+	 	let item = queryParam.split("=");
+		result.push(item[0])
+  });
+  return result;
+}
+
+
+let url_params_arr = getQueryParams();
+console.log("URLPARAM ARRAY:", url_params_arr);
+*/
+
+
+
+
+
+
+
+
+
+
+$('.filter_box a').click(function(e){
+
+	var data_val = $(this).data('val')
+
+	//console.log('lol');
+	//console.log(data_val);
+	//insertParam('category', data_id)
+
+
+
+	var urlParams = new URLSearchParams(window.location.search);
+	//var channel_list = urlParams.get('channel')
+
+	var category_list = urlParams.get('category')
+
+
+	console.log("data_val : ", data_val)
+
+	category_list = category_list + "fffffffffff"
+
+	console.log('--works--');
+	console.log(category_list);
+
+	/*
+	1. get current cat
+
+	2. 일단 2줄 짜리를 읽어봐
+
+	3. 읽었으면 걍 보내봐 generatelist로
+
+	4. 클릭하면 그걸 넣어야해
+	 */
+
+
+
+
+
+
+	//window.history.pushState("", "", "?category="+data_val);
+
+	generateList()
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$( function() {
+
+
+	generateList()
+
+
+});
+
+
+
+
+function insertParam(key, value) {
+	 key = encodeURIComponent(key);
+	 value = encodeURIComponent(value);
+
+	 // kvp looks like ['key1=value1', 'key2=value2', ...]
+	 var kvp = document.location.search.substr(1).split('&');
+	 let i=0;
+
+	 for(; i<kvp.length; i++){
+		  if (kvp[i].startsWith(key + '=')) {
+				let pair = kvp[i].split('=');
+				pair[1] = value;
+				kvp[i] = pair.join('=');
+				break;
+		  }
+	 }
+
+	 if(i >= kvp.length){
+		  kvp[kvp.length] = [key,value].join('=');
+	 }
+
+	 // can return this or...
+	 let params = kvp.join('&');
+
+	 // reload page with new params
+	// document.location.search = params;
+
+	 console.log(params);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function generateList(){
+
+
+	//음 get을 여기서 추릴까?
+	//const queryString = window.location.search;
+
+	var urlParams = new URLSearchParams(window.location.search);
+	var channel = urlParams.get('channel')
+	var category = urlParams.get('category')
+
+
+	//console.log('IT DOESNT WORKS');
+	//console.log(category);
+	//category = category.split(",");
+	//console.log('--->');
+	//console.log(category);
+
+
+	$.ajax({
+		type: 'GET',
+		url: "api/campaign_list/",
+		//data: { csrfmiddlewaretoken: window.CSRF_TOKEN, category: "cafe" },
+		data: {
+			csrfmiddlewaretoken: window.CSRF_TOKEN,
+			//category: ["cafe","living","food"],
+			//category: ["cafe"],
+			//category: [category],
+			//category: [],
+			//channel:["BLOG","INSTAGRAM"]
+			//channel:[channel],
+
+			category: category,
+			channel:channel,
+		},
+
+
+		success: function (res) {
+
+			//console.log(channel);
+			//console.log(category);
+
+
+
+			var div_list = "";
+
+			$.each(res, function (i, item) {
+
+				var div = `
+							<li class='card'>
+								<a href="{% url 'lg:campaign_view' %}">
+									<div class='card_img_box'>
+										<img class='card_img' src="static/img/${res[i].img_path}" alt="">
+									</div>
+									<div class='card_title'>${res[i].channel} - ${res[i].title} ${res[i].category}</div>
+									<div class='card_subtitle'>${res[i].subtitle} <br> ${res[i].created_time}</div>
+								</a>
+							</li>
+							`
+				div_list += div;
+			});
+			$('.card_list_box').empty().append(div_list)
+
+
+		}
+	})
+}
+
+
+
+
+</script>
+{% endblock script %}

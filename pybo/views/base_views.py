@@ -61,6 +61,7 @@ def index(request):
 		).order_by('-r_count','-create_date').distinct()
 
 
+
 	elif so == "question":
 		question_list = Question.objects.annotate(
 			q_count = Count('answer')

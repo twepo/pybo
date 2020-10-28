@@ -33,10 +33,7 @@ urlpatterns = [
     path('t-create/', base_views.todoCreate,name="todo-create" ),
 
     path('t-update/<str:pk>/', base_views.todoUpdate,name="todo-update" ),
-
     path('t-delete/<str:pk>/', base_views.todoDelete,name="todo-delete" ),
-
-
 
 
 
@@ -55,7 +52,7 @@ urlpatterns = [
     # path("home/", CreateView.as_view(model=Todo, fields=['title'], success_url=reverse_lazy('home')), name="home"),
 
     path("hssome/", base_views.TodoCreateView.as_view(), name="home"),
-    
+
 
 
 

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localhost</title>
+
+    <style>
+        body {
+            text-align: center;
+            background-color: #ddd;
+        }
+        .inputBox {
+            margin: auto;
+            width: 70%;
+            background: white;
+            height: 50px;
+            border-radius: 50px;
+            line-height: 50px;
+        }
+        .inputBox .name {
+            border-style: none;
+            border-bottom: 1px solid #ddd;
+            width: 70px;
+            padding-left: 20px;
+        }
+        .inputBox .item {
+            border-style: none;
+            border-bottom: 1px solid #ddd;
+            width: 400px;
+            margin-left: 50px;
+            padding-left: 20px;
+        }
+        ul {
+            list-style: none;
+            padding: 10px 0;
+            text-align: left;
+        }
+        ul li {
+            display: flex;
+            height: 50px;
+            line-height: 50px;
+            margin: 0.5rem 0;
+            padding: 0 0.9rem;
+            background: white;
+            border-radius: 5px;
+        }
+        .removeBtn {
+            margin-left: auto;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- vmodel 전부 이름 맞추기 -->
+
+
+<body>
+
+	<div id="app">
+		
+		<h1>My Todo App !</h1>
+		<strong>서로 할 일이나 의견을 공유해 봅시다.</strong>
+		<br>
+
+
+		<div class="inputBox">
+			<input class="name" type="text" placeholder="name ..." v-model.trim="name">				
+			<input class="item" 
+				type="text" placeholder="type anything welcomed ..."
+				v-on:keyup.enter="add_todo"
+				v-model.trim="todo">
+			
+			<button 
+				v-on:click="add_todo"
+			>ADD</button>
+		</div>
+
+
+		<ul>
+			<li v-for="(todo,index) in todoList">
+				<span>[[todo.name]] :: [[todo.todo]]</span>
+				<span class="removeBtn" v-on:click="delete_todo(index)">X</span>
+			</li>
+		</ul>
+
+		
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+
+	 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	 
+
+    <script>
+
+        var vm = new Vue({
+
+				delimiters:['[[',']]'],
+
+            el : '#app',
+            data:{
+                name:'',
+                todo:'',
+                todoList:[],
+				},
+				created: function(){
+					
+					console.log('created().... ㅋ');
+					this.fetch_all_todo();
+
+				},
+            methods:{
+
+					fetch_all_todo:function(){
+
+							console.log('fetch_all..todo..');
+							
+							axios.get('/api/todo/list')
+								.then(res=> {
+									console.log('GET RES!', res);
+
+									this.todoList = res.data;
+
+								})
+								.catch(err => {
+									console.log(this);
+									console.log('get err.....', err);
+								})
+
+								// then은 성공!
+								// catch는 실패!
+
+
+
+					},
+
+                add_todo:function(e){
+
+                    console.log('add clicking..');
+
+
+
+                    if(this.todo == '') {
+                        console.log('ahk like return');
+                        return;
+                    }
+
+                    if(this.name == '') this.name = '홍좆'
+
+                    this.todoList.push({ name:this.name, todo:this.todo })
+
+                    // 여까지 했으면 클리어점..
+                    this.name = ''
+                    this.todo = ''
+
+                },
+
+
+                delete_todo:function(index){
+                    console.log('ddeelete');
+                    console.log("this index : "+ index);
+
+                        // 저 dom을 조작하는게 아녀.. data를 조좍하자..
+
+                    this.todoList.splice(index,1)
+                }
+                
+
+            },
+        })
+
+
+    </script>
+
+</body>
+</html>

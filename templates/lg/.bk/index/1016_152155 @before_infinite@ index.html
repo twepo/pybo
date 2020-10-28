@@ -1,0 +1,665 @@
+{% extends 'base.html' %}
+{% load pybo_filter %}
+{% block content %}
+
+<body>
+   <style>
+      html {
+         line-height: 1.15;
+         font-size: 1rem;
+         font-family: 'Noto Sans KR';
+      }
+
+
+
+
+      .wrapper {
+         width: 100%;
+         height: 100%;
+      }
+
+
+
+
+      .container {
+         margin: 0 auto;
+
+         max-width: 1400px;
+         min-width: 1400px;
+
+         border: 2px solid red;
+         background: coral;
+      }
+
+
+
+
+
+
+
+
+      /*
+이걸 1200으로 하면 반갈죽을 포기해야한다..맞나?
+ */
+
+
+
+      .card_list_box {
+
+         /* background: gold; */
+         /* min-width: 1400px; */
+         /* width: 100%; */
+         /* VAR-READY */
+
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+         justify-content: space-between;
+
+      }
+
+
+      .card_list_box:after {
+         content: "";
+         flex-grow: 1;
+      }
+
+
+
+      .card {
+         background: green;
+         border: 1px solid purple;
+
+         width: 224px;
+         margin-right: 10.4px;
+
+
+         margin-bottom: 10px;
+         /* height: 150px; */
+         height: 285px;
+
+      }
+
+      .card:nth-child(6n) {
+         margin-right: 0;
+         background: blue;
+      }
+
+      .card a {
+         width: 100%;
+         height: 100%;
+         background: red;
+      }
+
+
+      img.card_img {
+         width: 100%;
+      }
+
+      .card_title {
+         padding: 10px 0;
+      }
+
+
+
+
+
+      /* 미리 준비.. 1200으로 */
+      @media screen and (max-width: 1400px) {
+         .container {
+
+            min-width: 940px;
+            max-width: 940px;
+            background: cyan;
+
+         }
+
+         .card {
+            width: 180px;
+            margin-right: 8.2px;
+         }
+
+         .card:nth-child(6n) {
+            margin-right: 8.2px;
+            background: yellow;
+         }
+
+         .card:nth-child(5n) {
+            margin-right: 0;
+            background: blue;
+         }
+
+
+
+      }
+
+
+
+
+
+
+
+      @media screen and (max-width: 500px) {
+
+         .container {
+            min-width: 100%;
+            max-width: 100%;
+            background: yellow;
+
+         }
+
+         .card_list_box {
+            padding: 0 5px;
+         }
+
+         .card {
+            width: 50%;
+            height: inherit;
+            padding: 5px 5px 15px 5px;
+         }
+
+         .card,
+         .card:nth-child(5n),
+         .card:nth-child(6n) {
+            margin-right: inherit;
+         }
+
+      }
+
+
+      .filter_box{
+         display: inline-flex;
+      }
+
+      .filter_box label{
+         vertical-align: middle;
+         line-height: 38px;
+      }
+
+      .filter_checkbox{
+         height: 40px;
+         user-select: none;
+         margin-left: 30px;
+         margin-right: 5px;
+      }
+   </style>
+   <div class="wrapper">
+      <div class="container">top</div>
+
+      <div class="container">banner /
+         <a href="http://127.0.0.1:8000/campaign/">캠패인보기</a>
+      </div>
+
+
+      <div class="container">
+
+
+         <div class="filter_box">
+
+
+         {% for category in category_list %}
+            <input type="checkbox"
+            {% if category.eng_name in request.GET.category %}checked="checked"{% endif %}
+            id="ca_{{category}}" name="{{category}}" value="{{category}}" class="filter_checkbox" data-type="category">
+            <label for="ca_{{category}}">{{category.kor_name}}</label><br>
+         {% endfor %}
+         </div>
+         <hr>
+         <div class="filter_box">
+            {% for channel in channel_list %}
+               <input type="checkbox"
+               {% if channel.eng_name in request.GET.channel %}checked="checked"{% endif %}
+               id="ca_{{channel}}" name="{{channel}}" value="{{channel}}" class="filter_checkbox" data-type="channel">
+               <label for="ca_{{channel}}">{{channel.kor_name}}</label><br>
+            {% endfor %}
+         </div>
+
+
+
+
+
+
+
+         <!-- <div class="filter_box">
+
+            <input type="checkbox" id="ca_cafe" name="cafe" value="cafe" class="filter_checkbox" data-type="category">
+            <label for="ca_cafe">cafe</label><br>
+
+            <input type="checkbox" id="ca_living" name="living" value="living" class="filter_checkbox" data-type="category">
+            <label for="ca_living">living</label><br>
+
+            <input type="checkbox" id="ca_tech" name="tech" value="tech" class="filter_checkbox" data-type="category">
+            <label for="ca_tech">tech</label><br>
+
+            <input type="checkbox" id="ca_food" name="food" value="food" class="filter_checkbox" data-type="category">
+            <label for="ca_food">food</label><br>
+
+            <input type="checkbox" id="ca_beauty" name="beauty" value="beauty" class="filter_checkbox" data-type="category">
+            <label for="ca_beauty">beauty</label><br>
+
+            <input type="checkbox" id="ca_culture" name="culture" value="culture" class="filter_checkbox" data-type="category">
+            <label for="ca_culture">culture</label><br>
+         </div> -->
+
+         <!-- <hr> -->
+
+         <!-- <div class="filter_box">
+
+            <input type="checkbox" id="ch_blog" name="blog" value="blog" class="filter_checkbox" data-type="channel">
+            <label for="ch_blog">Blog</label><br>
+
+            <input type="checkbox" id="ch_instagram" name="instagram" value="instagram" class="filter_checkbox" data-type="channel">
+            <label for="ch_instagram">Instagram</label><br>
+
+            <input type="checkbox" id="ch_youtube" name="youtube" value="youtube" class="filter_checkbox" data-type="channel">
+            <label for="ch_youtube">Youtube</label><br>
+
+            <input type="checkbox" id="ch_cafe" name="cafe" value="cafe" class="filter_checkbox" data-type="channel">
+            <label for="ch_cafe">Cafe</label><br>
+
+            <input type="checkbox" id="ch_shop" name="shop" value="shop" class="filter_checkbox" data-type="channel">
+            <label for="ch_shop">Shop</label><br>
+
+         </div> -->
+
+
+
+
+      </div>
+
+
+
+      <div class="container">
+         <!-- <a href="{% url 'lg:campaign_view' %}">TESTER</a> -->
+         <!-- <a href="{% url 'lg:campaign_view' %}">TESTER</a> -->
+         <ul class="card_list_box"></ul>
+      </div>
+
+
+      <div class="test_list_box"></div>
+
+   </div>
+
+
+
+
+</body>
+{% endblock %}
+{% block script %}
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$('.filter_checkbox').change(function(e){
+
+
+
+   var param_type = $(this).data('type')
+   var checked_val = $(this).val()
+   var status = this.checked
+   const url_params = new URLSearchParams(window.location.search);
+   var new_url_var
+
+
+   if(status == true){
+
+      // key= 있는지 확인 후 추가
+        if( !url_params.has(param_type) ){
+         url_params.append(param_type,'')
+      }
+
+      //현재 선택한 값을 넣기 위해 url_params를 array화
+      var cur_params_array = url_params.get(param_type).split(",");
+
+
+      // split으로 생겨난 빈칸 삭제
+      var cur_params_array = cur_params_array.filter(function (e) {
+         return e != "";
+      });
+
+
+
+      //현재 선택한 값을 array에 삽입
+      cur_params_array.push(checked_val);
+
+
+      // 혹시 모를 중복삭제
+      cur_params_array = cur_params_array.filter(function(item, pos) {
+          return cur_params_array.indexOf(item) == pos;
+      })
+
+      //url에 넣기위해 array를 comma-separate로 변환
+      var new_params = cur_params_array.join(',');
+
+      // urlSearch에 장착
+      url_params.set(param_type, new_params);
+
+      new_url_var = "?"+ decodeURIComponent(url_params)
+
+
+   } else if (status == false){
+
+
+      var cur_params_array = url_params.get(param_type).split(",");
+      var new_params_array = removeItem(cur_params_array, checked_val);
+      var new_params = new_params_array.join(',');
+
+
+      if(cur_params_array.length){
+
+         // value= 값이 아직 남아있으므로 value= 유지
+         url_params.set(param_type, new_params);
+         new_url_var = "?"+ decodeURIComponent(url_params)
+
+      } else {
+
+         // value=값이 없으므로 value= 까지 삭제
+         url_params.delete(param_type);
+         new_url_var = "?"+ decodeURIComponent(url_params)
+
+            //param이 전부없으면 물음표까지 삭제
+            var url_key_length = Array.from(url_params).length
+            if(!url_key_length){
+               new_url_var = "/"
+            }
+
+      }
+   }
+
+
+   // TODO ) B문제 때문에 추가함
+   window.history.replaceState("", "", new_url_var )
+
+   generateList()
+
+})
+
+
+
+
+
+
+
+
+setTimeout(function(){
+
+   //console.log("lolcoms");/
+   //$("#cafe").trigger('click')
+   //$("#cafe").trigger('click')
+
+}, 100);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$( function() {
+
+   generateList()
+
+
+   inflist.init();
+
+});
+
+
+   var inflist = {
+
+      param: {
+         curPage: 1,
+         pageListSize: 15,
+      },
+
+      init: function () {
+         this.testData();
+         this.checkScroll();
+      },
+      testData: function () {
+
+         // this.setListItems("${firstData}"); // 첫 진입시 데이터 셋팅
+         inflist.generateList()
+
+
+      },
+
+      checkScroll: function () {
+         // 무한 스크롤
+         $(window).scroll(function () {
+            if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+
+               console.log('hello it works');
+               //   this.param.curPage++; // 현재 페이지에서 +1 처리.
+               //   this.testAjax(); //ajax 호출
+
+               // inflist.testFunc();
+               // console.log('but not works');
+
+               inflist.param.curPage++;
+
+               inflist.generateList()
+
+            }
+         });
+      },
+      generateList: function () {
+
+         // ajax 자리임
+
+         console.log('AJAX TEST WORKS');
+
+         var urlParams = new URLSearchParams(window.location.search);
+         // url param 체크 후 있을경우 array화 해줌
+         var filter_space = {};
+         allowed_filters = ['category','channel']
+         allowed_filters.forEach(function(filter){
+            if(urlParams.get(filter)){
+               filter_space[filter] = urlParams.get(filter).split(',')
+            }
+         })
+
+         $.ajax({
+            type: 'GET',
+            url: "api/campaign_list/",
+            //data: { csrfmiddlewaretoken: window.CSRF_TOKEN, category: "cafe" },
+            data: {
+               csrfmiddlewaretoken: window.CSRF_TOKEN,
+               //category: ["cafe","living","food"],
+               //category: ["cafe"],
+               //category: [category],
+               //category: [],
+               //channel:["BLOG","INSTA"]
+               //channel:[channel],
+               category: filter_space['category'],
+               channel:filter_space['channel'],
+            },
+
+
+            success: function (res) {
+
+               var div_list = "";
+
+               $.each(res, function (i, item) {
+
+
+                  var div = `
+                           <li class='card'>
+                              <a href="{% url 'lg:campaign_view' %}">
+                                 <div class='card_img_box'>
+                                    <img class='card_img' src="static/img/${res[i].img_path}" alt="">
+                                 </div>
+                                 <div class='card_title'>${res[i].channel__eng_name} - ${res[i].title} ${res[i].category__eng_name}</div>
+                                 <div class='card_subtitle'>${res[i].subtitle} <br> ${res[i].created_time}</div>
+                              </a>
+                           </li>
+                           `
+                  div_list += div;
+               });
+
+               // $('.card_list_box').empty().append(div_list)
+               $('.card_list_box').append(div_list)
+
+
+            }
+         })
+
+
+
+
+
+
+
+      }
+
+
+
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function generateList(){
+
+   // console.log('GENERATE WORKS');
+
+
+   var urlParams = new URLSearchParams(window.location.search);
+   // url param 체크 후 있을경우 array화 해줌
+   var filter_space = {};
+   allowed_filters = ['category','channel']
+   allowed_filters.forEach(function(filter){
+      if(urlParams.get(filter)){
+         filter_space[filter] = urlParams.get(filter).split(',')
+      }
+   })
+
+   // console.log("filter_space['category'] : ", filter_space['category'])
+   // console.log("filter_space['channel'] : ", filter_space['channel'])
+
+
+
+   $.ajax({
+      type: 'GET',
+      url: "api/campaign_list/",
+      //data: { csrfmiddlewaretoken: window.CSRF_TOKEN, category: "cafe" },
+      data: {
+         csrfmiddlewaretoken: window.CSRF_TOKEN,
+         //category: ["cafe","living","food"],
+         //category: ["cafe"],
+         //category: [category],
+         //category: [],
+         //channel:["BLOG","INSTA"]
+         //channel:[channel],
+         category: filter_space['category'],
+         channel:filter_space['channel'],
+      },
+
+
+      success: function (res) {
+
+         var div_list = "";
+
+         $.each(res, function (i, item) {
+
+
+            var div = `
+                     <li class='card'>
+                        <a href="{% url 'lg:campaign_view' %}">
+                           <div class='card_img_box'>
+                              <img class='card_img' src="static/img/${res[i].img_path}" alt="">
+                           </div>
+                           <div class='card_title'>${res[i].channel__eng_name} - ${res[i].title} ${res[i].category__eng_name}</div>
+                           <div class='card_subtitle'>${res[i].subtitle} <br> ${res[i].created_time}</div>
+                        </a>
+                     </li>
+                     `
+            div_list += div;
+         });
+         $('.card_list_box').empty().append(div_list)
+
+
+      }
+   })
+}
+
+
+
+
+function removeItem(arr) {
+       var what, a = arguments, L = a.length, ax;
+       while (L > 1 && arr.length) {
+           what = a[--L];
+           while ((ax= arr.indexOf(what)) !== -1) {
+               arr.splice(ax, 1);
+           }
+       }
+       return arr;
+   }
+
+
+
+</script>
+{% endblock script %}

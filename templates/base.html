@@ -1,13 +1,23 @@
+
 {% load static %}
 
 <html lang="ko">
 	<head>
 		 <meta charset="utf-8">
-		 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		 <link rel="stylesheet" href="{% static 'style.css' %}">
-		 <title>LOGRIVAL</title>
+		 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,shrink-to-fit=no,user-scalable=no">
+
+
+		 <link rel="stylesheet" href="{% static 'css/fontawesome.all.min.css' %}">
+		 <link rel="stylesheet" href="{% static 'css/open-iconic.min.css' %}">
+		 <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+		 <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+		 <!-- <title>LOGRIVAL</title> -->
+		 <title>localhost</title>
+
 	</head>
-	
+
+
 
 
 
@@ -16,16 +26,44 @@
 
 		{% endblock %}
 
+		<script src="{% static 'js/jquery.min.js' %}"></script>
+		<script src="{% static 'js/jquery.cookie.js' %}"></script>
 
-		<script src="{% static 'jquery.min.js' %}"></script>
-	
+
+		<script>
+
+
+	var csrftoken = $.cookie('csrftoken');
+
+	function csrfSafeMethod(method) {
+		// these HTTP methods do not require CSRF protection
+		return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+	}
+
+	$.ajaxSetup({
+		beforeSend: function(xhr, settings) {
+			if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+					xhr.setRequestHeader("X-CSRFToken", csrftoken);
+			}
+		}
+	});
+
+
+
+
+
+		</script>
+
 		{% block script %}
+
 
 		{% endblock %}
 
-		
-</html>
 
 
 
-	
+		</html>
+
+
+
+
